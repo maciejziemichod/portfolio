@@ -1,5 +1,7 @@
 # portfolio
 
+**[live](https://maciejziemichod.github.io/portfolio/)**
+
 ## TODOS:
 
 - custom tooltip
