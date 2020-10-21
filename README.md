@@ -5,7 +5,7 @@
 ## TODOS:
 
 - custom tooltip
-- contact me [form](https://stackoverflow.com/questions/7381150/how-to-send-an-email-from-javascript) OR netflify contact form something
+- contact me [form](https://stackoverflow.com/questions/7381150/how-to-send-an-email-from-javascript) OR netflify contact form something OR php api hosted on heroku
 - make every animation done by me transition vue tag
 - add my photo
 - make project mobile friendly and responsive

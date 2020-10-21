@@ -8,7 +8,9 @@
       :orientation="index % 2 === 0 ? 'left' : 'right'"
     />
     <div class="button-container">
-      <ButtonItem size="mid">Show more</ButtonItem>
+      <router-link to="/projects">
+        <ButtonItem size="mid">Show more</ButtonItem>
+      </router-link>
     </div>
   </section>
 </template>
