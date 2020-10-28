@@ -1,5 +1,6 @@
 <template>
   <AppNavbar />
+  <SideFloats />
   <main class="container">
     <HeroSection />
     <ProjectsSection />
@@ -16,9 +17,10 @@ import ProjectsSection from "@/components/projectsSection/ProjectsSection.vue";
 import AboutSection from "@/components/AboutSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
 import FooterItem from "@/components/FooterItem.vue";
+import SideFloats from "@/components/SideFloats.vue";
 
 export default {
-  name: "App",
+  name: "Home",
   components: {
     AppNavbar,
     HeroSection,
@@ -26,6 +28,7 @@ export default {
     AboutSection,
     ContactSection,
     FooterItem,
+    SideFloats,
   },
 };
 </script>
