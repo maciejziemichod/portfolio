@@ -1,26 +1,26 @@
 <template>
-  <section id="projects">
-    <h1>Projects</h1>
-    <ProjectItem
-      v-for="(project, index) in projects"
-      :key="project.title"
-      :data="project"
-      :orientation="index % 2 === 0 ? 'left' : 'right'"
-    />
-    <div class="button-container">
-      <router-link to="/projects">
-        <ButtonItem size="mid">Show more</ButtonItem>
-      </router-link>
-    </div>
-  </section>
+  <main class="container">
+    <router-link to="/">Go back</router-link>
+    <section id="start">
+      <ProjectItem
+        v-for="(project, index) in projects"
+        :key="project.title"
+        :data="project"
+        :orientation="index % 2 === 0 ? 'left' : 'right'"
+      />
+    </section>
+    <router-link to="/">Go back</router-link>
+  </main>
 </template>
 
 <script>
-import ProjectItem from "./ProjectItem.vue";
-import ButtonItem from "../utilities/ButtonItem.vue";
+import ProjectItem from "@/components/projectsSection/ProjectItem.vue";
 
 export default {
-  name: "ProjectsSection",
+  name: "Projects",
+  components: {
+    ProjectItem,
+  },
   data() {
     return {
       projects: [
@@ -55,16 +55,5 @@ export default {
       ],
     };
   },
-  components: {
-    ProjectItem,
-    ButtonItem,
-  },
 };
 </script>
-
-<style scoped>
-.button-container {
-  padding-top: 100px;
-  text-align: center;
-}
-</style>

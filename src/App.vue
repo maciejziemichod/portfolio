@@ -1,34 +1,12 @@
 <template>
-  <AppNavbar />
-  <main class="container">
-    <HeroSection />
-    <ProjectsSection />
-    <AboutSection />
-    <ContactSection />
-  </main>
-  <FooterItem />
+  <!-- <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div> -->
+  <transition name="fade" mode="out-in">
+    <router-view />
+  </transition>
 </template>
-
-<script>
-import AppNavbar from "./components/AppNavbar.vue";
-import HeroSection from "./components/HeroSection.vue";
-import ProjectsSection from "./components/projectsSection/ProjectsSection.vue";
-import AboutSection from "./components/AboutSection.vue";
-import ContactSection from "./components/ContactSection.vue";
-import FooterItem from "./components/FooterItem.vue";
-
-export default {
-  name: "App",
-  components: {
-    AppNavbar,
-    HeroSection,
-    ProjectsSection,
-    AboutSection,
-    ContactSection,
-    FooterItem,
-  },
-};
-</script>
 
 <style>
 /* global */
@@ -114,6 +92,40 @@ h1 {
     padding: 0 25px;
   }
 }
+
+/* transition component */
+
+/* .fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+} */
+
+/* .fade-enter-active {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave-to {
+  opacity: 0;
+} */
 
 /* utilities */
 .hvr-grow {
