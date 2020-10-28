@@ -23,7 +23,7 @@
 - things connected with favicon, index html comment in head and in folder favicon (manifest, for apple etc)
 - custom required message for contact form
 - copy to clipboard too fast bug
-- router transition effect
+- vuex probably in the future
 
 ## Project setup
 

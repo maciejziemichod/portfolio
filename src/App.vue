@@ -3,9 +3,11 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div> -->
-  <transition name="fade" mode="out-in">
-    <router-view />
-  </transition>
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <style>
@@ -93,21 +95,7 @@ h1 {
   }
 }
 
-/* transition component */
-
-/* .fade-enter-active,
-.fade-leave-active {
-  transition-duration: 0.3s;
-  transition-property: opacity;
-  transition-timing-function: ease;
-}
-
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
-} */
-
-/* .fade-enter-active {
+.fade-enter-active {
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -125,7 +113,7 @@ h1 {
 }
 .fade-leave-to {
   opacity: 0;
-} */
+}
 
 /* utilities */
 .hvr-grow {

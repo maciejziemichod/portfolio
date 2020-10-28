@@ -1,13 +1,15 @@
 <template>
-  <AppNavbar />
-  <SideFloats />
-  <main class="container">
-    <HeroSection />
-    <ProjectsSection />
-    <AboutSection />
-    <ContactSection />
-  </main>
-  <FooterItem />
+  <div>
+    <AppNavbar />
+    <SideFloats />
+    <main class="container">
+      <HeroSection />
+      <ProjectsSection />
+      <AboutSection />
+      <ContactSection />
+    </main>
+    <FooterItem />
+  </div>
 </template>
 
 <script>

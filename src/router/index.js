@@ -24,8 +24,9 @@ const router = createRouter({
   routes,
   scrollBehavior() {
     document.getElementById("app").scrollIntoView();
-    // return { x: 0, y: 0 };
+    //// return { x: 0, y: 0 };
   },
+  // TODO: why is it not working properly
   // scrollBehavior(to, from, savedPosition) {
   //   if (to.hash) {
   //     if (from.name === "Projects") {
