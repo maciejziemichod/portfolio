@@ -1,43 +1,43 @@
-<template >
-    <div class="float-left">
-      <a href="mailto:maciej.ziemichod@gmail.com">maciej.ziemichod@gmail.com</a>
-    </div>
-    <div class="float-right">
-      <ul>
-        <li>
-          <a
-            href="https://github.com/maciejziemichod"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://codepen.io/maciejziemichod"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-codepen"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/maciej-ziemich%C3%B3d-b64753178/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/Maciej84900684"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
+<template>
+  <div class="float-left" :class="show ? '' : 'slide'">
+    <a href="mailto:maciej.ziemichod@gmail.com">maciej.ziemichod@gmail.com</a>
+  </div>
+  <div class="float-right" :class="show ? '' : 'slide'">
+    <ul>
+      <li>
+        <a
+          href="https://github.com/maciejziemichod"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://codepen.io/maciejziemichod"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-codepen"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/maciej-ziemich%C3%B3d-b64753178/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/Maciej84900684"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -84,6 +84,10 @@ export default {
 </script>
 
 <style scoped>
+.hbGQwI {
+  left: 20px;
+  right: auto;
+}
 .float-right,
 .float-left {
   width: 40px;
@@ -95,6 +99,7 @@ export default {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
+  transition: all 0.7s;
 }
 .float-right::after,
 .float-left::after {
@@ -146,5 +151,44 @@ export default {
 }
 .float-right ul li a:hover {
   color: var(--gray);
+}
+
+@media (max-width: 1080px) {
+  .float-left {
+    left: 20px;
+  }
+  .float-right {
+    right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .float-left,
+  .float-right {
+    display: none;
+  }
+}
+
+.fade-enter-active {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+.slide {
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
 }
 </style>

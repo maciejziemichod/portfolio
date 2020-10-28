@@ -3,7 +3,7 @@
     <nav>
       <div class="logo">
         <a href="#hero" class="hvr-grow">
-          <img src="../assets/logo.svg" alt="logo" />
+          <img src="@/assets/logo.svg" alt="logo" />
         </a>
       </div>
       <ul>

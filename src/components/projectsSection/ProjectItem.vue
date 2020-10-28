@@ -73,6 +73,8 @@ h2 {
 article {
   display: flex;
   justify-content: space-between;
+}
+article:not(:first-of-type) {
   padding-top: 150px;
 }
 article.left {

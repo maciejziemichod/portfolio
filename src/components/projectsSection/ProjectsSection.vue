@@ -63,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  padding-bottom: 150px;
+}
 .button-container {
   padding-top: 100px;
   text-align: center;

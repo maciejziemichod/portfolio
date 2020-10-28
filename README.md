@@ -14,6 +14,7 @@
 - images optimization
 - should full list button exist, if so shouldn't it be done in a different way? maybe it should be a button "more info" and it goes to a different page containing more information about me and technologies i've used so far
 - button for scrolling all the way up on the projects page
+- icons in footer
 
 ### Not important:
 

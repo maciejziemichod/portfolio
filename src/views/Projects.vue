@@ -1,25 +1,33 @@
 <template>
-  <main class="container">
-    <router-link to="/">Go back</router-link>
-    <section id="start">
-      <ProjectItem
-        v-for="(project, index) in projects"
-        :key="project.title"
-        :data="project"
-        :orientation="index % 2 === 0 ? 'left' : 'right'"
-      />
-    </section>
-    <router-link to="/">Go back</router-link>
-  </main>
+  <div>
+    <SecondNavbar />
+    <main class="container">
+      <section>
+        <ProjectItem
+          v-for="(project, index) in projects"
+          :key="project.title"
+          :data="project"
+          :orientation="index % 2 === 0 ? 'left' : 'right'"
+        />
+      </section>
+      <router-link to="/">
+        <ButtonItem size="sm"> Return </ButtonItem>
+      </router-link>
+    </main>
+  </div>
 </template>
 
 <script>
+import SecondNavbar from "@/components/SecondNavbar.vue";
 import ProjectItem from "@/components/projectsSection/ProjectItem.vue";
+import ButtonItem from "@/components/utilities/ButtonItem.vue";
 
 export default {
   name: "Projects",
   components: {
     ProjectItem,
+    ButtonItem,
+    SecondNavbar,
   },
   data() {
     return {
