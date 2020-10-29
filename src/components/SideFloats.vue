@@ -64,10 +64,11 @@ export default {
     isElementInViewport(el) {
       const rect = el.getBoundingClientRect();
       return (
-        rect.top >= 0 &&
+        rect.top >= -100 &&
         rect.left >= 0 &&
-        rect.top <=
-          (window.innerHeight || document.documentElement.clientHeight) - 200
+        (rect.top <=
+          (window.innerHeight || document.documentElement.clientHeight) - 200 ||
+          rect.bottom < window.innerHeight)
       );
     },
     callbackFunc() {
@@ -84,10 +85,6 @@ export default {
 </script>
 
 <style scoped>
-.hbGQwI {
-  left: 20px;
-  right: auto;
-}
 .float-right,
 .float-left {
   width: 40px;
