@@ -23,7 +23,7 @@ export default {
 </script>
 <style scoped>
 .icons {
-  /* display: none; */
+  display: none;
   margin: 0 auto 10px;
   width: fit-content;
 }

@@ -74,7 +74,6 @@ export default {
     callbackFunc() {
       const elem = document.querySelector("#contact");
       if (this.isElementInViewport(elem)) {
-        console.log("visible");
         this.show = false;
       } else {
         this.show = true;

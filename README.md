@@ -9,8 +9,6 @@
 - contact me [form](https://stackoverflow.com/questions/7381150/how-to-send-an-email-from-javascript) OR netflify contact form something OR php api hosted on heroku
 - add my photo
 - make project mobile friendly and responsive
-- page with all my projects shown with "Show more" button
-- floating things on left and right with socials icons and email, it should disappear when scrolled to contact section
 - images optimization
 - should full list button exist, if so shouldn't it be done in a different way? maybe it should be a button "more info" and it goes to a different page containing more information about me and technologies i've used so far
 - button for scrolling all the way up on the projects page

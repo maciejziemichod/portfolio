@@ -102,8 +102,8 @@ h2 {
 img {
   box-shadow: 0 10px 30px -15px var(--dark);
   width: 100%;
-  object-fit: cover;
-  height: 340px;
+  object-fit: contain;
+  /* height: 340px; */
   transition: 0.3s box-shadow;
 }
 img:hover {

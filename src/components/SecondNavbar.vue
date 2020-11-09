@@ -9,7 +9,11 @@
         </router-link>
       </div>
       <div class="logo">
-        <img src="@/assets/logo.svg" alt="logo" />
+        <router-link to="/">
+          <span class="hvr-grow">
+            <img src="@/assets/logo.svg" alt="logo" />
+          </span>
+        </router-link>
       </div>
     </nav>
   </header>
