@@ -7,7 +7,13 @@
         </div>
         <div class="content">
           <h2>Contact me</h2>
-          <form action="/" method="POST" @submit.prevent>
+          <form
+            name="contact-form"
+            method="POST"
+            data-netlify="true"
+            honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact-form" />
             <label for="name">Name </label>
             <input
               type="text"
@@ -108,8 +114,11 @@ export default {
 
 .form {
   width: 40%;
-  height: 85vh;
-  margin: 7.5vh auto;
+  height: fit-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
   background-color: var(--light);
 }
 
@@ -166,6 +175,7 @@ i:hover {
 }
 .content form button {
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 12px;
   color: var(--light);
   background-color: var(--dark);

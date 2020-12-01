@@ -10,19 +10,17 @@
 - add my photo
 - make project mobile friendly and responsive
 - images optimization
-- should full list button exist, if so shouldn't it be done in a different way? maybe it should be a button "more info" and it goes to a different page containing more information about me and technologies i've used so far
-- button for scrolling all the way up on the projects page
-- icons in footer
+- full list should be "more info" and it goes to a different page containing more information about me, my cv and technologies i've used so far, also maybe my blog if i will have one (thoughts garden)
 
 ### Not important:
 
-- maybe enrich hero section
 - custom tooltip
 - make every animation done by me transition vue tag
 - things connected with favicon, index html comment in head and in folder favicon (manifest, for apple etc)
 - custom required message for contact form
 - copy to clipboard too fast bug
 - vuex probably in the future
+- different languages
 
 ## Project setup
 
