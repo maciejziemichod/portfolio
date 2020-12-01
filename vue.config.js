@@ -2,7 +2,7 @@
 // const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
-  publicPath: "/portfolio/",
+  // publicPath: "/portfolio/",
   // configureWebpack: () => {
   //   if (process.env.NODE_ENV !== 'production') return;
   //   return {
