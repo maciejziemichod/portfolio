@@ -32,7 +32,7 @@ export default {
           githubLink:
             "https://github.com/maciejziemichod/Javascript-Calculator",
           pageLink: "https://codepen.io/maciejziemichod/full/ZEQxMVP",
-          image: "javascript_calculator.png",
+          image: "javascript_calculator-min.png",
         },
         {
           title: "Exercise Tracker",
@@ -41,7 +41,7 @@ export default {
           labels: ["Express", "MongoDB", "Materialize"],
           githubLink: "https://github.com/maciejziemichod/Exercise-Tracker",
           pageLink: "https://quill-near-waxflower.glitch.me/",
-          image: "exercise_tracker.png",
+          image: "exercise_tracker-min.png",
         },
         {
           title: "Markdown Previewer",
@@ -50,7 +50,7 @@ export default {
           labels: ["React", "Markdown", "JavaScript"],
           githubLink: "https://github.com/maciejziemichod/Markdown-Previewer",
           pageLink: "https://codepen.io/maciejziemichod/full/jObQKao",
-          image: "react_markdown_previewer.png",
+          image: "react_markdown_previewer-min.png",
         },
       ],
     };

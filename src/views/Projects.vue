@@ -44,7 +44,7 @@ export default {
           labels: ["Vue 3", "Local Storage", "Vuex"],
           githubLink: "https://github.com/maciejziemichod/web-clipboard",
           pageLink: "https://maciejziemichod.github.io/web-clipboard/",
-          image: "web_clipboard.png",
+          image: "web_clipboard-min.png",
         },
         {
           title: "Pomodoro Clock",
@@ -53,7 +53,7 @@ export default {
           labels: ["React", "Redux", "React Hooks"],
           githubLink: "https://github.com/maciejziemichod/Pomodoro-Clock",
           pageLink: "https://codepen.io/maciejziemichod/full/gOPZYMy",
-          image: "pomodoro_clock.png",
+          image: "pomodoro_clock-min.png",
         },
         {
           title: "Random Quote Generator",
@@ -62,7 +62,7 @@ export default {
           githubLink:
             "https://github.com/maciejziemichod/Random-Quote-Generator",
           pageLink: "https://codepen.io/maciejziemichod/full/YzyJmeG",
-          image: "random_quote_generator.png",
+          image: "random_quote_generator-min.png",
         },
         {
           title: "File Metadata Microservice",
@@ -71,7 +71,7 @@ export default {
           labels: ["Express", "BEM", "Sass"],
           githubLink: "https://github.com/maciejziemichod/File-Metadata",
           pageLink: "https://sugary-lyrical-buttercup.glitch.me/",
-          image: "file_metadata_microservice.png",
+          image: "file_metadata_microservice-min.jpeg",
         },
         {
           title: "Drum machine",
@@ -79,7 +79,7 @@ export default {
           labels: ["React", "React Hooks", "Bootstrap"],
           githubLink: "https://github.com/maciejziemichod/Drum-Machine",
           pageLink: "https://codepen.io/maciejziemichod/full/KKdOpyM",
-          image: "drum_machine.png",
+          image: "drum_machine-min.png",
         },
       ],
     };
