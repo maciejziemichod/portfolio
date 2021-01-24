@@ -71,6 +71,10 @@ h1 {
   font-size: 32px;
 }
 
+p {
+  font-size: 18px;
+}
+
 .container {
   padding: 0 150px;
   margin: 0 auto;
@@ -88,6 +92,9 @@ h1 {
 @media (max-width: 480px) {
   .container {
     padding: 0 25px;
+  }
+  h1 {
+    margin: initial;
   }
 }
 

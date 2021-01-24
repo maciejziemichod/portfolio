@@ -113,11 +113,11 @@ export default {
   margin-left: 1rem;
 }
 main {
-  width: 900px;
+  width: 1000px;
   max-width: 100%;
   margin: 0 auto;
   padding-top: 2rem;
-  min-height: calc(100vh - 80px - 3rem);
+  min-height: calc(100vh - 80px - 7rem);
 }
 h1 {
   padding-bottom: 2.5rem;

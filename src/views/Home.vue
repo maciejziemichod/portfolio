@@ -8,7 +8,7 @@
       <AboutSection />
       <ContactSection />
     </main>
-    <FooterItem />
+    <FooterItem :hideIconsOnBigScreens="true" />
   </div>
 </template>
 

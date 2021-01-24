@@ -1,13 +1,26 @@
 <template>
   <footer>
-    <div class="icons">
-      <FontAwesome icon="github" link="https://github.com/maciejziemichod" />
-      <FontAwesome icon="codepen" link="https://codepen.io/maciejziemichod" />
+    <div class="icons" :class="{ 'icons-hide': hideIconsOnBigScreens }">
+      <FontAwesome
+        icon="github"
+        link="https://github.com/maciejziemichod"
+        class="fa-lg"
+      />
+      <FontAwesome
+        icon="codepen"
+        link="https://codepen.io/maciejziemichod"
+        class="fa-lg"
+      />
       <FontAwesome
         icon="linkedin"
         link="https://www.linkedin.com/in/maciej-ziemich%C3%B3d-b64753178/"
+        class="fa-lg"
       />
-      <FontAwesome icon="twitter" link="https://twitter.com/Maciej84900684" />
+      <FontAwesome
+        icon="twitter"
+        link="https://twitter.com/Maciej84900684"
+        class="fa-lg"
+      />
     </div>
     <a
       href="https://github.com/maciejziemichod/portfolio"
@@ -26,11 +39,16 @@ export default {
   components: {
     FontAwesome,
   },
+  props: {
+    hideIconsOnBigScreens: {
+      default: false,
+      type: Boolean,
+    },
+  },
 };
 </script>
 <style scoped>
 .icons {
-  display: none;
   margin: 0 auto 10px;
   width: fit-content;
 }
@@ -39,6 +57,9 @@ export default {
 }
 .icons > *:hover {
   color: var(--gray);
+}
+.icons-hide {
+  display: none;
 }
 p {
   display: block;
@@ -54,10 +75,10 @@ p {
   color: var(--gray);
 }
 footer {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 @media (max-width: 768px) {
-  .icons {
+  .icons-hide {
     display: block;
   }
 }
