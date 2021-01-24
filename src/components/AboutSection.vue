@@ -12,7 +12,7 @@
           Technologies I’ve been working with recently:
         </p>
         <ListItem :items="technologies" />
-        <div
+        <!-- <div
           ref="moreTechnologies"
           class="more-technologies"
           :style="[
@@ -22,10 +22,10 @@
           ]"
         >
           <ListItem :items="moreTechnologies" />
-        </div>
-        <ButtonItem @click="showAllTech = !showAllTech" size="sm" class="mt-25"
-          >Full list</ButtonItem
-        >
+        </div> -->
+        <router-link to="/about">
+          <ButtonItem size="sm" class="mt-25">More</ButtonItem>
+        </router-link>
       </div>
       <div class="image-container">
         <figure>
@@ -52,37 +52,37 @@ export default {
     return {
       technologies: [
         "JavaScript (ES6+)",
-        "PHP",
-        "Vue3",
-        "PrestaShop",
+        "Nuxt",
+        "Vue 3",
         "HTML5 & CSS3",
+        "Vuex",
         "Figma",
       ],
-      moreTechnologies: ["TypeScript", "NodeJS", "Express", "React"],
-      showAllTech: false,
+      // moreTechnologies: ["TypeScript", "NodeJS", "Express", "React"],
+      // showAllTech: false,
       computedHeight: "0px",
     };
   },
-  methods: {
-    initHeight: function () {
-      this.$refs["moreTechnologies"].style.height = "auto";
-      this.$refs["moreTechnologies"].style.position = "absolute";
-      this.$refs["moreTechnologies"].style.visibility = "hidden";
-      this.$refs["moreTechnologies"].style.display = "block";
+  // methods: {
+  //   initHeight: function () {
+  //     this.$refs["moreTechnologies"].style.height = "auto";
+  //     this.$refs["moreTechnologies"].style.position = "absolute";
+  //     this.$refs["moreTechnologies"].style.visibility = "hidden";
+  //     this.$refs["moreTechnologies"].style.display = "block";
 
-      const height = getComputedStyle(this.$refs["moreTechnologies"]).height;
-      const numHeight = parseFloat(height.replace(/[px]/, ""));
-      this.computedHeight = numHeight + 10 + "px";
+  //     const height = getComputedStyle(this.$refs["moreTechnologies"]).height;
+  //     const numHeight = parseFloat(height.replace(/[px]/, ""));
+  //     this.computedHeight = numHeight + 10 + "px";
 
-      this.$refs["moreTechnologies"].style.position = null;
-      this.$refs["moreTechnologies"].style.visibility = null;
-      this.$refs["moreTechnologies"].style.display = null;
-      this.$refs["moreTechnologies"].style.height = 0;
-    },
-  },
-  mounted() {
-    this.initHeight();
-  },
+  //     this.$refs["moreTechnologies"].style.position = null;
+  //     this.$refs["moreTechnologies"].style.visibility = null;
+  //     this.$refs["moreTechnologies"].style.display = null;
+  //     this.$refs["moreTechnologies"].style.height = 0;
+  //   },
+  // },
+  // mounted() {
+  //   this.initHeight();
+  // },
 };
 </script>
 

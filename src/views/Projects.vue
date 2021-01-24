@@ -17,6 +17,7 @@
       </div>
     </main>
     <ScrollTop />
+    <FooterItem />
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import SecondNavbar from "@/components/SecondNavbar.vue";
 import ScrollTop from "@/components/ScrollTop.vue";
 import ProjectItem from "@/components/projectsSection/ProjectItem.vue";
 import ButtonItem from "@/components/utilities/ButtonItem.vue";
+import FooterItem from "@/components/FooterItem.vue";
 
 export default {
   name: "Projects",
@@ -33,6 +35,7 @@ export default {
     ButtonItem,
     SecondNavbar,
     ScrollTop,
+    FooterItem,
   },
   data() {
     return {

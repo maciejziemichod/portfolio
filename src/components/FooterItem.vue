@@ -9,7 +9,14 @@
       />
       <FontAwesome icon="twitter" link="https://twitter.com/Maciej84900684" />
     </div>
-    <p>Designed & built by Maciej Ziemichód</p>
+    <a
+      href="https://github.com/maciejziemichod/portfolio"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="owner"
+    >
+      <p>Designed & built by Maciej Ziemichód</p>
+    </a>
   </footer>
 </template>
 <script>
@@ -42,6 +49,12 @@ p {
   /* position: relative;
   bottom: 25px;
   height: 0; */
+}
+.owner:hover {
+  color: var(--gray);
+}
+footer {
+  padding-top: 2rem;
 }
 @media (max-width: 768px) {
   .icons {
