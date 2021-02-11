@@ -62,6 +62,26 @@ export default {
                     image: "pomodoro_clock-min.png",
                 },
                 {
+                    title: "Exercise Tracker",
+                    description:
+                        "Microservice with UI that holds information about users' exercises. Built with Express, Mongoose and Materialize CSS. An API project, part of freeCodeCamp's APIs and Microservices Certification.",
+                    labels: ["Express", "MongoDB", "Materialize"],
+                    githubLink:
+                        "https://github.com/maciejziemichod/Exercise-Tracker",
+                    pageLink: "https://quill-near-waxflower.glitch.me/",
+                    image: "exercise_tracker-min.png",
+                },
+                {
+                    title: "Markdown Previewer",
+                    description:
+                        "App that displays markdown preview live. Project done with React as a part of freeCodeCamp's Front End Libraries Certification.",
+                    labels: ["React", "Markdown", "JavaScript"],
+                    githubLink:
+                        "https://github.com/maciejziemichod/Markdown-Previewer",
+                    pageLink: "https://codepen.io/maciejziemichod/full/jObQKao",
+                    image: "react_markdown_previewer-min.png",
+                },
+                {
                     title: "Random Quote Generator",
                     description: "Nothing else to say, stay inspired.",
                     labels: ["React", "API", "Bootstrap"],
