@@ -1,35 +1,42 @@
 <template>
-  <ul>
-    <li v-for="item in items" :key="item">{{ item }}</li>
-  </ul>
+    <ul>
+        <li v-for="item in items" :key="item">{{ item }}</li>
+    </ul>
 </template>
 
 <script>
 export default {
-  name: "ListItem",
-  props: {
-    items: {
-      required: true,
-      type: Array,
+    name: "ListItem",
+    props: {
+        items: {
+            required: true,
+            type: Array,
+        },
     },
-  },
 };
 </script>
 
 <style scoped>
 ul {
-  width: 100%;
+    width: 100%;
 }
 
 li {
-  display: inline-block;
-  width: 50%;
-  position: relative;
-  padding-left: 20px;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    padding-left: 20px;
 }
 li::before {
-  position: absolute;
-  left: 0px;
-  content: "▹";
+    position: absolute;
+    left: 0px;
+    content: "▹";
+}
+
+@media (max-width: 480px) {
+    li {
+        display: block;
+        width: 100%;
+    }
 }
 </style>

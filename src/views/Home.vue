@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <AppNavbar />
-    <SideFloats />
-    <main class="container">
-      <HeroSection />
-      <ProjectsSection />
-      <AboutSection />
-      <ContactSection />
-    </main>
-    <FooterItem :hideIconsOnBigScreens="true" />
-  </div>
+    <div>
+        <AppNavbar />
+        <SideFloats />
+        <main class="container">
+            <HeroSection />
+            <ProjectsSection />
+            <AboutSection />
+            <ContactSection />
+        </main>
+        <FooterItem :hideIconsOnBigScreens="true" />
+    </div>
 </template>
 
 <script>
@@ -22,15 +22,15 @@ import FooterItem from "@/components/FooterItem.vue";
 import SideFloats from "@/components/SideFloats.vue";
 
 export default {
-  name: "Home",
-  components: {
-    AppNavbar,
-    HeroSection,
-    ProjectsSection,
-    AboutSection,
-    ContactSection,
-    FooterItem,
-    SideFloats,
-  },
+    name: "Home",
+    components: {
+        AppNavbar,
+        HeroSection,
+        ProjectsSection,
+        AboutSection,
+        ContactSection,
+        FooterItem,
+        SideFloats,
+    },
 };
 </script>

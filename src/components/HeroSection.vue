@@ -1,25 +1,34 @@
 <template>
-  <section id="hero">
-    <div>
-      <h1>Maciej Ziemichód.</h1>
-      <h2>I create things for the web.</h2>
-    </div>
-  </section>
+    <section id="hero">
+        <div>
+            <h1>Maciej Ziemichód.</h1>
+            <h2>I create things for the web.</h2>
+        </div>
+    </section>
 </template>
 
 <style scoped>
 h1,
 h2 {
-  font-size: 80px;
-  margin: 0;
+    font-size: 80px;
+    margin: 0;
 }
 h2 {
-  font-weight: normal;
+    font-weight: normal;
 }
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 550px) {
+    h1,
+    h2 {
+        font-size: 40px;
+    }
+    div {
+        width: min-content;
+    }
 }
 </style>
