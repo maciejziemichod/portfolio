@@ -1,6 +1,6 @@
 # portfolio
 
-**[live](https://maciejziemichod.github.io/portfolio/)**
+**[live](602476da8f4cb07496e1c795--kind-easley-5a6713.netlify.app)**
 
 ## Project setup
 

@@ -25,6 +25,16 @@
                 >.
             </p>
             <p>
+                I have made a reusable custom directive for Vue 3, which makes
+                adding tooltips really easy. You can check it out
+                <a
+                    href="https://github.com/maciejziemichod/v-tooltip"
+                    target="_blank"
+                    class="link hvr-underline-from-center"
+                    >here</a
+                >.
+            </p>
+            <p>
                 This page is made enterily in Vue + Vue Router. You can see the
                 code
                 <a
@@ -46,7 +56,8 @@
             </p>
             <p>
                 Life goals: get some commercial dev experience; live as digital
-                nomad; simply be happy and less stressed out; learn Rust.
+                nomad; simply be happy and less stressed out; learn TypeScript,
+                Rust, GraphQL and PostgreSQL.
             </p>
             <div class="return">
                 <router-link to="/">
@@ -132,7 +143,7 @@ h1 {
     overflow: initial;
 }
 p {
-    padding: 0.5rem 0;
+    padding: 1.4rem 0 0;
 }
 ul {
     padding-top: 1rem;
