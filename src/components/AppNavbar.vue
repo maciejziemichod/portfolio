@@ -69,12 +69,17 @@ export default {
         toggleMenu() {
             this.showMenu = !this.showMenu;
         },
+        onResize() {
+            this.width = window.innerWidth;
+        },
     },
     mounted() {
         window.addEventListener("scroll", this.onScroll);
+        window.addEventListener("resize", this.onResize);
     },
     beforeUnmount() {
         window.removeEventListener("scroll", this.onScroll);
+        window.removeEventListener("resize", this.onResize);
     },
 };
 </script>
