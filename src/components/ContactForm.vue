@@ -199,7 +199,7 @@ i:hover {
 }
 @media (max-width: 480px) {
     .form {
-        width: 90%;
+        width: 100%;
     }
 
     .form .content {
