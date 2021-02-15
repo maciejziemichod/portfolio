@@ -15,13 +15,20 @@
                 >. It's something similar to blog, but less strict.
             </p>
             <p>
-                You can see view my CV under this
+                You can see view my CV as a
                 <a
-                    href="./cv.pdf"
+                    href="./Maciej_Ziemichod_CV.pdf"
                     target="_blank"
                     class="link hvr-underline-from-center"
                 >
-                    link </a
+                    PDF
+                </a>
+                or on
+                <a
+                    href="https://www.notion.so/Maciej-Ziemich-d-c37b14c2f8844399bce21861ce804872"
+                    target="_blank"
+                    class="link hvr-underline-from-center"
+                    >Notion</a
                 >.
             </p>
             <p>

@@ -15,28 +15,18 @@
                     Technologies I’ve been working with recently:
                 </p>
                 <ListItem :items="technologies" />
-                <!-- <div
-          ref="moreTechnologies"
-          class="more-technologies"
-          :style="[
-            showAllTech
-              ? { height: computedHeight, paddingBottom: '10px' }
-              : {},
-          ]"
-        >
-          <ListItem :items="moreTechnologies" />
-        </div> -->
                 <router-link to="/about" class="about-btn mt-25">
                     <ButtonItem size="sm">More</ButtonItem>
                 </router-link>
             </div>
-            <div class="image-container">
+            <!-- waits until i do proper image of myself -->
+            <!-- <div class="image-container">
                 <figure>
                     <img src="" alt="photo of myself" />
                     <div class="decoration"></div>
                     <div class="background"></div>
                 </figure>
-            </div>
+            </div> -->
         </article>
     </section>
 </template>
@@ -57,35 +47,13 @@ export default {
                 "JavaScript (ES6+)",
                 "Nuxt",
                 "Vue 3",
-                "HTML5 & CSS3",
+                "HTML & CSS",
                 "Vuex",
                 "Figma",
             ],
-            // moreTechnologies: ["TypeScript", "NodeJS", "Express", "React"],
-            // showAllTech: false,
             computedHeight: "0px",
         };
     },
-    // methods: {
-    //   initHeight: function () {
-    //     this.$refs["moreTechnologies"].style.height = "auto";
-    //     this.$refs["moreTechnologies"].style.position = "absolute";
-    //     this.$refs["moreTechnologies"].style.visibility = "hidden";
-    //     this.$refs["moreTechnologies"].style.display = "block";
-
-    //     const height = getComputedStyle(this.$refs["moreTechnologies"]).height;
-    //     const numHeight = parseFloat(height.replace(/[px]/, ""));
-    //     this.computedHeight = numHeight + 10 + "px";
-
-    //     this.$refs["moreTechnologies"].style.position = null;
-    //     this.$refs["moreTechnologies"].style.visibility = null;
-    //     this.$refs["moreTechnologies"].style.display = null;
-    //     this.$refs["moreTechnologies"].style.height = 0;
-    //   },
-    // },
-    // mounted() {
-    //   this.initHeight();
-    // },
 };
 </script>
 
@@ -101,9 +69,9 @@ article {
     padding-top: 50px;
 }
 
-article > div {
+/* article > div {
     width: calc(100% - 400px);
-}
+} */
 
 figure {
     width: 300px;
@@ -152,12 +120,22 @@ figure img {
 .about-btn > * {
     margin-top: 2rem;
 }
+/*//! this will be deleted after i do selfie */
+.about-btn {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0;
+}
+
+.about-btn > * {
+    margin-top: 0;
+}
 
 @media (max-width: 1000px) {
-    article > div,
+    /* article > div,
     .image-container {
         width: 50%;
-    }
+    } */
 
     .image-container {
         align-items: flex-start;
