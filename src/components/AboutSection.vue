@@ -46,7 +46,7 @@ export default {
             technologies: [
                 "JavaScript (ES6+)",
                 "Nuxt",
-                "Vue 3",
+                "Vue",
                 "HTML & CSS",
                 "Vuex",
                 "Figma",
