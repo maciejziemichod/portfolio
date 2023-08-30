@@ -6,19 +6,13 @@
                 <a :href="'mailto:' + email">
                     {{ email }}
                 </a>
-                <span @click="copyToClipboard(email)"
-                    ><i class="far fa-copy" title="Copy to clipboard"></i
-                ></span>
+                <span @click="copyToClipboard(email)"><i class="far fa-copy" title="Copy to clipboard"></i></span>
             </p>
             <p class="fadeCopy phone">
                 <a :href="'tel:' + phoneNum">{{ phoneNum }}</a>
-                <span @click="copyToClipboard(phoneNum)"
-                    ><i class="far fa-copy" title="Copy to clipboard"></i
-                ></span>
+                <span @click="copyToClipboard(phoneNum)"><i class="far fa-copy" title="Copy to clipboard"></i></span>
             </p>
-            <ButtonItem @click="showForm = true" size="lg" class="contact"
-                >Contact me</ButtonItem
-            >
+            <ButtonItem @click="showForm = true" size="lg" class="contact">Contact me</ButtonItem>
         </div>
     </section>
     <div class="alert-box" :class="alertClass">
@@ -35,7 +29,7 @@ export default {
     name: "ContactSection",
     data() {
         return {
-            email: "maciej.ziemichod@gmail.com",
+            email: "devziemichod@gmail.com",
             phoneNum: "(+48) 781 295 692",
             alertText: "",
             alertClass: "",
@@ -163,6 +157,7 @@ span {
     transition: opacity 0.4s;
     opacity: 0;
 }
+
 .fadeCopy:hover i {
     opacity: 1;
 }
@@ -179,27 +174,33 @@ span {
     padding: 20px;
     border: 1px solid var(--dark);
 }
+
 .alert-box i {
     padding-right: 10px;
 }
+
 .alert-box.success {
     color: #08c315;
     background-color: #e7f9f1;
     border-color: #96e69d;
 }
+
 .alert-box.error {
     color: #ff000d;
     background-color: #faeded;
     border-color: #fd8a90;
 }
+
 .alert-box.show-opacity {
     opacity: 1;
 }
+
 .alert-box.show-visible {
     visibility: visible;
 }
 
 @media (max-width: 319px) {
+
     #contact p,
     #contact button {
         font-size: 16px;

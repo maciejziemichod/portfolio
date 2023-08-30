@@ -1,12 +1,8 @@
 <template>
     <section id="projects">
         <h1>Projects</h1>
-        <ProjectItem
-            v-for="(project, index) in projects"
-            :key="project.title"
-            :data="project"
-            :orientation="index % 2 === 0 ? 'left' : 'right'"
-        />
+        <ProjectItem v-for="(project, index) in projects" :key="project.title" :data="project"
+            :orientation="index % 2 === 0 ? 'left' : 'right'" />
         <div class="button-container">
             <router-link to="/projects">
                 <ButtonItem size="mid">Show more</ButtonItem>
@@ -25,6 +21,33 @@ export default {
         return {
             projects: [
                 {
+                    title: "Northwestern Media - radio stations",
+                    description:
+                        "Rebuild proccess is in progress. The project involves rebuilding big legacy radio stations multisite, live radio updates, websockets, node servers and mobile apps. I've also created custom client side routing library to make the radio player persistent across page loads.",
+                    labels: ["Websockets", "Node.js", "Client side routing"],
+                    pageLink:
+                        "https://myktis.com/",
+                    image: "nwm.png",
+                },
+                {
+                    title: "Huumans",
+                    description:
+                        "Previously known as Wellonomics. It's a web app for employers and employees to track and improve their personal wellbeing. It's built on top of WordPress with a lot of customizations, external integrations and unusual solutions. I architected the wellbeing visual reports system for employers.",
+                    labels: ["React.js", "Chart.js", "LMS"],
+                    pageLink:
+                        "https://www.huumans.io/",
+                    image: "huumans.png",
+                },
+                {
+                    title: "Columbia Threadneedle Investments",
+                    description:
+                        "Merging two big financial websites - CTI and BMO. It was tricky to prepare everything for migration and do it well without making the multisite slower.",
+                    labels: ["Elementor", "WordPress", "Data layer"],
+                    pageLink:
+                        "https://www.columbiathreadneedle.co.uk/",
+                    image: "cti.png",
+                },
+                {
                     title: "Digital Garden",
                     description:
                         "My own blog in the form of digital garden, which means that I drop thoughts there and don't try to polish them, they grow with time like plants. It's built with Nuxt and uses @nuxt/content module as a Git-based headless CMS.",
@@ -34,26 +57,6 @@ export default {
                     pageLink:
                         "https://maciejziemichod.github.io/digital-garden/",
                     image: "digital_garden-min.png",
-                },
-                {
-                    title: "Schedule Scraper",
-                    description:
-                        "Web app that scrapes some radio schedules and displays only the important data: time and the program. I made it as a helper for me and my coworkers. Front built with Vue, informations are extracted with Cheerio and the schedules from previous days are saved to localStorage. There is also my own CORS proxy server which adds required headers to the request. ",
-                    labels: ["Vue", "Cheerio", "localStorage"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/schedule-scraper",
-                    pageLink: "https://vibrant-booth-a8f0ef.netlify.app/",
-                    image: "schedule_scraper-min.png",
-                },
-                {
-                    title: "JavaScript Calculator",
-                    description:
-                        "JavaScript calculator using formula logic. Driven by React with neumorphism aesthetic. It's a part of freeCodeCamp's Front End Libraries Certification.",
-                    labels: ["React", "Neumorphism", "JavaScript"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/Javascript-Calculator",
-                    pageLink: "https://codepen.io/maciejziemichod/full/ZEQxMVP",
-                    image: "javascript_calculator-min.png",
                 },
             ],
         };
@@ -69,10 +72,12 @@ export default {
 h1 {
     padding-bottom: 150px;
 }
+
 .button-container {
     padding-top: 100px;
     text-align: center;
 }
+
 @media (max-width: 1080px) {
     h1 {
         padding-bottom: 5rem;

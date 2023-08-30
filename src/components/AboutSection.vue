@@ -4,15 +4,19 @@
         <article>
             <div>
                 <p>
-                    Hello! My name is Maciej, I’m a web developer based in
+                    Hello! My name is Maciej, I'm a full stack developer based in
                     Lublin.
                 </p>
                 <p>
-                    I enjoy building modern things that live on the internet. My
-                    goal is to provide unique experiences to the user.
+                    I enjoy creating robust solutions and learning new skills. I have a passion for programming, expanding
+                    my knowledge in multiple areas and improving/fixing stuff.
+                </p>
+                <p>
+                    I've been working professionally since March 2021 but for much more than 40 hours a week, so I have much
+                    more experience than what is on paper.
                 </p>
                 <p class="technologies-title">
-                    Technologies I’ve been working with recently:
+                    My best skills:
                 </p>
                 <ListItem :items="technologies" />
                 <router-link to="/about" class="about-btn mt-25">
@@ -44,12 +48,12 @@ export default {
     data() {
         return {
             technologies: [
-                "JavaScript (ES6+)",
-                "Nuxt",
-                "Vue",
-                "HTML & CSS",
-                "Vuex",
-                "Figma",
+                "English",
+                "JavaScript/TypeScript",
+                "PHP",
+                "CSS & HTML",
+                "Node",
+                "Frontend frameworks",
             ],
             computedHeight: "0px",
         };
@@ -78,6 +82,7 @@ figure {
     height: 300px;
     position: relative;
 }
+
 figure .background {
     position: absolute;
     width: 100%;
@@ -85,6 +90,7 @@ figure .background {
     background-color: white;
     z-index: 3;
 }
+
 figure .decoration {
     z-index: 1;
     position: absolute;
@@ -95,6 +101,7 @@ figure .decoration {
     border: 1px solid var(--gray);
     z-index: 1;
 }
+
 figure img {
     width: 100%;
     height: 100%;
@@ -117,9 +124,10 @@ figure img {
     transition: 0.4s;
 }
 
-.about-btn > * {
+.about-btn>* {
     margin-top: 2rem;
 }
+
 /*//! this will be deleted after i do selfie */
 .about-btn {
     display: block;
@@ -127,7 +135,7 @@ figure img {
     margin: 2rem auto 0;
 }
 
-.about-btn > * {
+.about-btn>* {
     margin-top: 0;
 }
 
@@ -152,7 +160,8 @@ figure img {
     article {
         flex-direction: column-reverse;
     }
-    article > div,
+
+    article>div,
     .image-container {
         width: 100%;
     }
@@ -175,7 +184,7 @@ figure img {
         margin: 2rem auto 0;
     }
 
-    .about-btn > * {
+    .about-btn>* {
         margin-top: 0;
     }
 }

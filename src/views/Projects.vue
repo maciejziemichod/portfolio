@@ -3,12 +3,8 @@
         <SecondNavbar />
         <main class="container">
             <section>
-                <ProjectItem
-                    v-for="(project, index) in projects"
-                    :key="project.title"
-                    :data="project"
-                    :orientation="index % 2 === 0 ? 'left' : 'right'"
-                />
+                <ProjectItem v-for="(project, index) in projects" :key="project.title" :data="project"
+                    :orientation="index % 2 === 0 ? 'left' : 'right'" />
             </section>
             <div class="return">
                 <router-link to="/">
@@ -41,74 +37,46 @@ export default {
         return {
             projects: [
                 {
-                    title: "Web Clipboard",
-                    description:
-                        "Web app made for personal use. It helps in my current job, when I have repetitive topics that day. Easy to use clipboard manager. Made with Vue 3.",
-                    labels: ["Vue 3", "Local Storage", "Vuex"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/web-clipboard",
-                    pageLink:
-                        "https://maciejziemichod.github.io/web-clipboard/",
-                    image: "web_clipboard-min.png",
+                    title: "Embraer Webinar Centre",
+                    description: "WordPress based platform for recorded and live webinars. It includes custom integration with Clickmeeting platform where client can host their webinars and provide the access on the website.",
+                    labels: ["Webinars", "Clickmeeting", "WordPress"],
+                    pageLink: "https://events.embraercommercialaviation.com/",
+                    image: "embraer.png",
                 },
                 {
-                    title: "Pomodoro Clock",
-                    description:
-                        "React pomodoro clock. It helps managing time, splitting it between work and breaks.",
-                    labels: ["React", "Redux", "React\u00A0Hooks"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/Pomodoro-Clock",
-                    pageLink: "https://codepen.io/maciejziemichod/full/gOPZYMy",
-                    image: "pomodoro_clock-min.png",
+                    title: "Lux Research",
+                    description: "Creating new components and then doing a rebrand of the website. The website is created with Hubspot CMS.",
+                    labels: ["Hubspot CMS", "JavaScript"],
+                    pageLink: "https://www.luxresearchinc.com/",
+                    image: "lux.png",
                 },
                 {
-                    title: "Exercise Tracker",
-                    description:
-                        "Microservice with UI that holds information about users' exercises. Built with Express, Mongoose and Materialize CSS. An API project, part of freeCodeCamp's APIs and Microservices Certification.",
-                    labels: ["Express", "MongoDB", "Materialize"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/Exercise-Tracker",
-                    pageLink: "https://quill-near-waxflower.glitch.me/",
-                    image: "exercise_tracker-min.png",
+                    title: "Expleo",
+                    description: "I was responsible for creating pretty complex header and rebuild of the landing page. The new landing page has semi-full page transitions created with GSAP.",
+                    labels: ["GSAP", "Animations", "CSS"],
+                    pageLink: "https://expleo.com/",
+                    image: "expleo.png",
                 },
                 {
-                    title: "Markdown Previewer",
-                    description:
-                        "App that displays markdown preview live. Project done with React as a part of freeCodeCamp's Front End Libraries Certification.",
-                    labels: ["React", "Markdown", "JavaScript"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/Markdown-Previewer",
-                    pageLink: "https://codepen.io/maciejziemichod/full/jObQKao",
-                    image: "react_markdown_previewer-min.png",
+                    title: "VIP$ COIN",
+                    description: "The main highlight of this project is that it was created fully in a few days as the timeline was very tight.",
+                    labels: ["Rapid development", "WordPress"],
+                    pageLink: "https://www.vipscoin.com/",
+                    image: "vipscoin.png",
                 },
                 {
-                    title: "Random Quote Generator",
-                    description: "Nothing else to say, stay inspired.",
-                    labels: ["React", "API", "Bootstrap"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/Random-Quote-Generator",
-                    pageLink: "https://codepen.io/maciejziemichod/full/YzyJmeG",
-                    image: "random_quote_generator-min.png",
+                    title: "BMO GAM",
+                    description: "I've helped during the Kurtosys replatform. It involved migrating from Elementor version 2 to 3 which introduced many breaking changes. Soon after the european BMO was merged with CTI.",
+                    labels: ["Elementor", "GTM", "Migration"],
+                    pageLink: "https://www.bmogam.com/",
+                    image: "bmo.png",
                 },
                 {
-                    title: "File Metadata Microservice",
-                    description:
-                        "Microservice that analyses uploaded file and responses with JSON containing file's name and size.",
-                    labels: ["Express", "BEM", "Sass"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/File-Metadata",
-                    pageLink: "https://sugary-lyrical-buttercup.glitch.me/",
-                    image: "file_metadata_microservice-min.jpeg",
-                },
-                {
-                    title: "Drum machine",
-                    description:
-                        "Online drums, it works both with mouse and keyboard.",
-                    labels: ["React", "React\u00A0Hooks", "Bootstrap"],
-                    githubLink:
-                        "https://github.com/maciejziemichod/Drum-Machine",
-                    pageLink: "https://codepen.io/maciejziemichod/full/KKdOpyM",
-                    image: "drum_machine-min.png",
+                    title: "Jensen Investment Management",
+                    description: "On my first project as professional developer I was thrown in at the deep end. The project was about migrating everything from Kurtosys platform built on top of WordPress and Elementor to a different hosting with different major Elementor version. I had to fill in the gaps of missing plugins from the previous platform and was mostly the only dev on the project. I had the opportunity prove my value and it turned out great - I was promoted to main developer after about 3 months.",
+                    labels: ["WordPress", "Plugins", "Migration"],
+                    pageLink: "https://www.jenseninvestment.com/",
+                    image: "jensen.png",
                 },
             ],
         };

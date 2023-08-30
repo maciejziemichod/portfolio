@@ -8,23 +8,16 @@
                 {{ data.description }}
             </p>
             <div class="labels">
-                <LabelItem
-                    v-for="label in data.labels"
-                    :key="label"
-                    :text="label"
-                />
+                <LabelItem v-for="label in data.labels" :key="label" :text="label" />
             </div>
             <div class="icons-container">
-                <IconItem icon="github" :link="data.githubLink" />
-                <IconItem icon="link" :link="data.pageLink" />
+                <IconItem v-if="data.githubLink" icon="github" :link="data.githubLink" />
+                <IconItem v-if="data.pageLink" icon="link" :link="data.pageLink" />
             </div>
         </div>
         <figure>
             <a :href="data.pageLink" target="_blank" rel="noopener noreferrer">
-                <img
-                    :src="require(`../../assets/${data.image}`)"
-                    alt="project image"
-                />
+                <img :src="require(`../../assets/${data.image}`)" alt="project image" />
             </a>
         </figure>
     </article>
@@ -82,24 +75,30 @@ article {
     display: flex;
     justify-content: space-between;
 }
+
 article:not(:first-of-type) {
     padding-top: 150px;
 }
+
 article.left {
     flex-direction: row;
     text-align: left;
 }
+
 article.left p {
     padding-right: 40px;
 }
+
 article.right {
     flex-direction: row-reverse;
     text-align: right;
 }
+
 article.right p {
     padding-left: 40px;
 }
-article > * {
+
+article>* {
     width: 50%;
 }
 
@@ -114,6 +113,7 @@ img {
     /* height: 340px; */
     transition: 0.3s box-shadow;
 }
+
 img:hover {
     box-shadow: 0 20px 40px -15px var(--dark);
 }
@@ -128,7 +128,8 @@ p {
     padding-top: 20px;
     font-size: 20px;
 }
-.icons-container > *:first-child {
+
+.icons-container>*:first-child {
     padding-right: 10px;
 }
 
@@ -139,32 +140,40 @@ p {
 }
 
 @media (max-width: 768px) {
+
     article.left,
     article.right {
         flex-direction: column-reverse;
         text-align: left;
     }
-    article > * {
+
+    article>* {
         width: initial;
     }
+
     article.right p,
     article.left p {
         padding: 0 0 1rem;
     }
+
     h2 {
         padding: 1rem 0;
         text-align: center;
     }
+
     .icons-container {
         text-align: center;
         font-size: 1.5rem;
     }
-    .icons-container > a {
+
+    .icons-container>a {
         padding: 0 1.5rem;
     }
+
     article:not(:first-of-type) {
         padding-top: 100px;
     }
+
     .labels {
         text-align: center;
     }
