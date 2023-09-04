@@ -80,6 +80,7 @@ export default {
                 "Tailwind",
                 "HTML",
                 "React",
+                "Twig",
                 "Redux",
                 "Vue",
                 "Vuex",
