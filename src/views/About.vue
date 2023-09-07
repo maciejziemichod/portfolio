@@ -35,7 +35,7 @@
                     class="link hvr-underline-from-center">here</a>.
             </p>
             <p>
-                All the technologies, tools and other things I've used so far (that I remember) (in random
+                All the technologies, tools, concepts and other things I've used so far (that I remember) (in random
                 order):
                 <ListItem :items="technologies" />
             </p>
@@ -108,6 +108,7 @@ export default {
                 "Agile",
                 "Jira",
                 "jQuery",
+                "PM2",
                 "Code reviewing",
                 "Webinars",
                 "Websockets",
